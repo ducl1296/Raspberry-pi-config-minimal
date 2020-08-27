@@ -6,17 +6,9 @@ case $instalar in
   n ) exit;;
 esac
 done
-sudo apt-get update && sudo apt-get upgrade
-cd ~/
+sudo apt-get update && sudo apt-get upgrade -y
 mkdir .config
-sudo apt-get install xorg xserver-xorg-video-fbturbo lightdm i3 rofi ccrypt clipit git python3-pip proftpd lxpanel -y
+sudo apt-get install xorg xserver-xorg-video-fbturbo lightdm i3 rofi ccrypt clipit git python3-pip proftpd lxpanel feh compton unzip xpdf git ccrypt nemo python3-pip -y
+sudo apt-get install ffmpeg lxappearance yotube-dl -y
 pip3 install pyTelegramBotApi
-read -p "Quieres instalar el lcd? (y/n)" lcd
-case $lcd in
-  y ) break;;
-  n ) /bin/echo -e "\e[1;31mHe terminado\e[0m"
- exit;;
-esac
-cp lcd /home/pi/.config/lcd
-sudo chmod +x /home/pi/.config/lcd
-echo -e "\e[1;31mGracias! sigue pendiente\e[0m"
+pip3 install youtube-dl
