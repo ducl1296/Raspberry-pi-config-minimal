@@ -12,3 +12,16 @@ sudo apt-get install xorg xserver-xorg-video-fbturbo lightdm i3 rofi ccrypt clip
 sudo apt-get install ffmpeg lxappearance yotube-dl omxplayer -y
 pip3 install pyTelegramBotApi
 pip3 install youtube-dl
+git clone https://github.com/ducl1296/minimal-berry
+cd minimal-berry
+////////Instalacion de config
+sudo mkdir /usr/share/slim/themes
+sudo cp -r config/slim/darky_pink /usr/share/slim/themes/
+sudo cp config/slim/slim.conf /etc/slim.conf
+mkdir /home/"$USER"/.local/share/fonts
+cp fonts/* /home/"$USER"/.local/share/fonts
+mkdir /home/"$USER"/.config/wallpapers
+cp config/wallpapers/* /home/"$USER"/.config/wallpapers/
+mkdir /home/"$USER"/.config/scripts
+cp scripts/* /home/"$USER"/.config/scripts/
+cp -r config/* /home/"$USER"/.config/
