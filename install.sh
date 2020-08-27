@@ -9,7 +9,7 @@ done
 sudo apt-get update && sudo apt-get upgrade -y
 mkdir .config
 sudo apt-get install xorg xserver-xorg-video-fbturbo lightdm i3 rofi ccrypt clipit git python3-pip proftpd lxpanel feh compton unzip xpdf git ccrypt nemo python3-pip -y
-sudo apt-get install ffmpeg lxappearance yotube-dl omxplayer -y
+sudo apt-get install ffmpeg lxappearance youtube-dl omxplayer -y
 pip3 install pyTelegramBotApi
 pip3 install youtube-dl
 git clone https://github.com/ducl1296/minimal-berry
