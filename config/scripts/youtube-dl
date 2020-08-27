@@ -1,0 +1,6 @@
+#!/bin/bash
+url=$(zenity --entry --title="Descarga video de youtube" --text="Introduce el link")
+cd ~/descargas
+echo "$url"
+youtube-dl "$url"
+zenity --info --title="Completado" --text="Se Descargo tu video, buscalo en descargas"
