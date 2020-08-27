@@ -4,7 +4,7 @@ set $mod Mod4
 #exec xrandr --output LVDS1 --scale 1.10x1.10
 exec --no-startup-id compton &
 exec feh --randomize --bg-fill ~/.config/wallpapers/*
-exec polybar example -r
+exec lxpanel &
 font waffle-10:style=Regular
 
 # Before i3 v4.8, we used to recommend this one as the default:
@@ -27,7 +27,7 @@ bindsym $mod+c exec terminator -e ~/connect
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec rofi -show drun -font "scientifica 8" -lines 10
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
