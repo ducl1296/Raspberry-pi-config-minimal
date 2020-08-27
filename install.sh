@@ -9,7 +9,7 @@ done
 sudo apt-get update && sudo apt-get upgrade
 cd ~/
 mkdir .config
-sudo apt-get install xorg xserver-xorg-video-fbturbo lightdm i3 rofi ccrypt clipit git python3-pip proftpd -y
+sudo apt-get install xorg xserver-xorg-video-fbturbo lightdm i3 rofi ccrypt clipit git python3-pip proftpd lxpanel -y
 pip3 install pyTelegramBotApi
 read -p "Quieres instalar el lcd? (y/n)" lcd
 case $lcd in
