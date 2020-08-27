@@ -1,0 +1,27 @@
+[global_config]
+  borderless = True
+  title_use_system_font = False
+  title_font = Monospace 6
+[keybindings]
+[profiles]
+  [[default]]
+    audible_bell = True
+    icon_bell = False
+    background_type = transparent
+    cursor_shape = underline
+    cursor_color = "#fce94f"
+    cursor_color_fg = False
+    font = scientifica 8
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
