@@ -19,9 +19,7 @@ sudo mkdir /usr/share/slim/themes
 sudo cp -r config/slim/darky_pink /usr/share/slim/themes/
 sudo cp config/slim/slim.conf /etc/slim.conf
 mkdir /home/"$USER"/.local/share/fonts
-cp fonts/* /home/"$USER"/.local/share/fonts
-mkdir /home/"$USER"/.config/wallpapers
-cp config/wallpapers/* /home/"$USER"/.config/wallpapers/
+cp config/fonts/* /home/"$USER"/.local/share/fonts
 mkdir /home/"$USER"/.config/scripts
-cp scripts/* /home/"$USER"/.config/scripts/
+cp config/scripts/* /home/"$USER"/.config/scripts/
 cp -r config/* /home/"$USER"/.config/
